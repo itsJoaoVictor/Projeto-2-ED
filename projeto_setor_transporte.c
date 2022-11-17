@@ -1,17 +1,3 @@
-/*
-O programa simula o setor de uma empresa grande de vendas, que por conta do grande volume de pedidos, precisa de uma solução ágil e eficiente para o controle de todas as entregas. O usuário final se trata do setor de transporte que através do programa poderá dar um suporte maior aos clientes em relação aos pedidos.
-O programa irá armazenar  numero do pedido, nome do cliente, cpf do cliente e Endereco de entrega e o status do produto (se já foi entregue, ou se está a caminho), o numero do pedido, juntamente com  as outras informações são gerados pelo setor de vendas e passado para o setor de transportes.
-O método Hash utilizado será o Endereçamento Aberto, a função de hash utilizada é a função de divisão, será usado variáveis dinâmicas.
-Em média será possível acumular 50.000 pedidos.
-Após a entrega o status do produto será alterado para entregue.
-Funcionalidades
-1 - Inserir (Inserir um novo pedido)
-2 - Remover (Remover um pedido caso seja necessário)
-3 - Buscar (Buscar um pedido)
-4 - Listar (Listar pedidos )
-5 - Alterar Status (Altera status da situação do pedido, se já foi entregue ou nao)
-
-*/
 
 #include <stdio.h>
 #include <stdlib.h>
