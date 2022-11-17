@@ -36,23 +36,23 @@ typedef struct tabela{
 }tabela; 
 
 //Função para criar a tabela
-tabela* criar_tabela(){ //Criação da tabela
-    tabela *tab = (tabela*) malloc(sizeof(tabela)); //Alocação de memória para a tabela
-    if(tab != NULL){ //Verificação se a tabela foi criada
-        tab->qtd = 0; //Quantidade de elementos na tabela
-        tab->pedidos = (pedido*) malloc(TAM * sizeof(pedido)); //Alocação de memória para os pedidos
-        if(tab->pedidos == NULL){ //Verificação se os pedidos foram criados
-            free(tab); //Liberação de memória
-            return NULL; //Retorno nulo
+tabela* criar_tabela(){ 
+    tabela *tab = (tabela*) malloc(sizeof(tabela)); 
+    if(tab != NULL){ 
+        tab->qtd = 0; 
+        tab->pedidos = (pedido*) malloc(TAM * sizeof(pedido)); 
+        if(tab->pedidos == NULL){ 
+            free(tab); 
+            return NULL; /
         } 
     }
-    return tab; //Retorno da tabela
+    return tab; 
 }
 
 //Função para liberar a tabela
-void liberar_tabela(tabela *tab){ //Liberação da tabela
-    free(tab->pedidos); //Liberação dos pedidos
-    free(tab); //Liberação da tabela
+void liberar_tabela(tabela *tab){ 
+    free(tab->pedidos); 
+    free(tab); 
 }  
 
 //Função para calcular o hash
