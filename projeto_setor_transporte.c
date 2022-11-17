@@ -43,7 +43,7 @@ tabela* criar_tabela(){
         tab->pedidos = (pedido*) malloc(TAM * sizeof(pedido)); 
         if(tab->pedidos == NULL){ 
             free(tab); 
-            return NULL; /
+            return NULL; 
         } 
     }
     return tab; 
